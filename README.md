@@ -20,16 +20,16 @@ All analysis is performed in **RStudio** using the **tidymodels** and **ranger**
 ---
 
 ## 📊 Visual Highlights  
-![Age vs Total Prescription Cost](visuals/Age_vs_Total_Prescription_Cost.png)  
+![Age vs Total Prescription Cost](Age_vs_Total_Prescription_Cost.png)  
 *Age vs Total Prescription Cost – shows trend of total cost by patient age*
 
-![Average Prescription Cost by Insurance](visuals/Average_Prescription_Cost_by_Insurance.png)  
+![Average Prescription Cost by Insurance](Average_Prescription_Cost_by_Insurance.png)  
 *Average prescription cost grouped by insurance provider*
 
-![Top 10 Most Prescribed Drugs](visuals/Top_10_Most_Prescribed_Drugs.png)  
+![Top 10 Most Prescribed Drugs](Top_10_Most_Prescribed_Drugs.png)  
 *Top 10 drugs prescribed in the dataset*
 
-![Top 10 Predictors of High Pharmacy Spend](visuals/Top_10_Predictors_of_High_Pharmacy_Spend.png)  
+![Top 10 Predictors of High Pharmacy Spend](Top_10_Predictors_of_High_Pharmacy_Spend.png)  
 *Feature importance chart from random forest model*
 
 ---
