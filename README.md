@@ -8,7 +8,7 @@
 ---
 
 ## 🎯 Motivation  
-Pharmacy costs are one of the fastest-growing components of healthcare spend. By uncovering the key drivers of high-cost prescriptions, this project helps highlight opportunities for cost reduction, formulary optimisation, and improved patient outcomes.
+Pharmacy costs are one of the fastest-growing components of healthcare spend. By uncovering the key drivers of high-cost prescriptions, this project highlights opportunities for cost reduction, formulary optimisation, and improved patient outcomes.
 
 ---
 
@@ -20,16 +20,16 @@ All analysis is performed in **RStudio** using the **tidymodels** and **ranger**
 ---
 
 ## 📊 Visual Highlights  
-![Age vs Total Prescription Cost](Age_vs_Total_Prescription_Cost.png)  
+![Age vs Total Prescription Cost](https://raw.githubusercontent.com/hgbidon/pharmacy-spend-analysis/main/Age%20vs%20Total%20Prescription%20Cost.png)  
 *Age vs Total Prescription Cost – shows trend of total cost by patient age*
 
-![Average Prescription Cost by Insurance](Average_Prescription_Cost_by_Insurance.png)  
+![Average Prescription Cost by Insurance](https://raw.githubusercontent.com/hgbidon/pharmacy-spend-analysis/main/Average%20Prescription%20Cost%20by%20Insurance.png)  
 *Average prescription cost grouped by insurance provider*
 
-![Top 10 Most Prescribed Drugs](Top_10_Most_Prescribed_Drugs.png)  
+![Top 10 Most Prescribed Drugs](https://raw.githubusercontent.com/hgbidon/pharmacy-spend-analysis/main/Top%2010%20Most%20Prescribed%20Drugs.png)  
 *Top 10 drugs prescribed in the dataset*
 
-![Top 10 Predictors of High Pharmacy Spend](Top_10_Predictors_of_High_Pharmacy_Spend.png)  
+![Top 10 Predictors of High Pharmacy Spend](https://raw.githubusercontent.com/hgbidon/pharmacy-spend-analysis/main/Top%2010%20Predictors%20of%20High%20Pharmacy%20Spend.png)  
 *Feature importance chart from random forest model*
 
 ---
@@ -39,12 +39,12 @@ All analysis is performed in **RStudio** using the **tidymodels** and **ranger**
 
 | File | Description | Key Columns |
 |------|-------------|-------------|
-| `PATIENT1(1).csv`     | Patient demographics & insurance | `patientID`, `insurance` |
-| `DOCTOR1(1).csv`      | Prescriber details             | `physID` |
-| `DRUGS.csv`           | Drug information, prices, suppliers | `NDC`, `supID` |
-| `INSURANCE.csv`       | Insurance company & copay details   | `name`, `coPay` |
-| `PRESCRIPTIONS.csv`   | Prescription events                   | `patientID`, `physID`, `NDC` |
-| `SUPPLIER.csv`        | Supplier details                       | `supID` |
+| `PATIENT1(1).csv`     | Patient demographics & insurance             | `patientID`, `insurance` |
+| `DOCTOR1(1).csv`      | Prescriber details                             | `physID` |
+| `DRUGS.csv`           | Drug information, prices, suppliers           | `NDC`, `supID` |
+| `INSURANCE.csv`       | Insurance company & copay details             | `name`, `coPay` |
+| `PRESCRIPTIONS.csv`   | Prescription events                            | `patientID`, `physID`, `NDC` |
+| `SUPPLIER.csv`        | Supplier details                                 | `supID` |
 
 **Entity Relationships:**  
 `PATIENT` —< `PRESCRIPTIONS` >— `DOCTOR`  
@@ -98,7 +98,7 @@ Top predictive features of high-spend prescriptions:
 ---
 
 ## 💡 Business Impact  
-- **Cost Optimization:** Identifies which pricing and prescribing factors drive pharmacy spend, enabling focus on the largest financial levers.  
+- **Cost Optimization:** Identifies which pricing and prescribing factors drive pharmacy spend—enabling focus on the largest financial levers.  
 - **Risk Stratification:** Enables prediction of high-cost prescriptions for proactive cost management.  
 - **Supplier & Margin Insights:** Compares purchase vs sell prices to highlight potential inefficiencies.  
 - **Policy Evaluation:** Quantifies the effect of co-pay structures and refill behaviour on total expenditure.  
@@ -116,9 +116,9 @@ Top predictive features of high-spend prescriptions:
 ## 📁 Repository Structure  
 ```bash
 📦 pharmacy-spend-analysis
- ┣ 📄 pharmacy_analysis.Rmd     # Main R Markdown workflow  
- ┣ 📄 pharmacy_clean.csv        # Clean merged dataset  
- ┣ 📊 visuals/                  # Exported plots  
+ ┣ 📄 pharmacy_analysis.Rmd       # Main R Markdown workflow  
+ ┣ 📄 pharmacy_clean.csv          # Clean merged dataset  
+ ┣ 📊 visuals/                    # Exported plots  
  ┣ 📜 LICENSE  
  ┗ 📘 README.md  
 ```
